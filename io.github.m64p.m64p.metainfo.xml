@@ -13,7 +13,7 @@
       <p>m64p comes bundled with paraLLEl-RDP for graphics. It should give you the best out-of-the-box experience available for N64 gaming.</p>
   </description>
   <screenshots>
-      <screenshot type="default">https://raw.githubusercontent.com/gal20/flathub/io.github.m64p.m64p/m64p.png</screenshot>
+      <screenshot type="default">https://raw.githubusercontent.com/flathub/io.github.m64p.m64p/master/m64p.png</screenshot>
   </screenshots>
   <releases>
     <release version="v2021.6.23" date="2021-06-23"/>

@@ -36,6 +36,24 @@ modules:
       - /lib/*.a
       - /lib/*.la
 
+  - name: p7zip
+    no-autogen: true
+    make-args:
+      - 7za
+    make-install-args:
+      - DEST_HOME=/app
+      - DEST_SHARE=/app/share
+    sources:
+      - type: git
+        url: https://github.com/jinfeihan57/p7zip.git
+        tag: v17.04
+        commit: 0b5b1b1a866d0e41cb7945e60a32262874e724aa
+        x-checker-data:
+          type: git
+    cleanup:
+      - /man
+      - /share
+
   - name: mupen64plus-core
     subdir: mupen64plus-core/projects/unix
     no-autogen: true

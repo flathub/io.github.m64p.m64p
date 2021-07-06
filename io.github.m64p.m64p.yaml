@@ -134,8 +134,6 @@ modules:
       - type: shell
         commands:
           - echo "#define GUI_VERSION \"$(git rev-parse HEAD)\"" > mupen64plus-gui/version.h
-      - type: patch
-        path: 3d4923b.patch
       - type: file
         path: io.github.m64p.m64p.desktop
       - type: file

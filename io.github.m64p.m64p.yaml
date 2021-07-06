@@ -71,6 +71,7 @@ modules:
         x-checker-data:
           type: git
           tag-pattern: ^(v[\d.]+)$
+          is-main-source: true
 
   - name: mupen64plus-input-raphnetraw
     subdir: mupen64plus-input-raphnetraw/projects/unix

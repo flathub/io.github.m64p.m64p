@@ -6,10 +6,12 @@ command: mupen64plus-gui
 rename-icon: mupen64plus
 finish-args:
   - --share=ipc
-  - --socket=x11
+  - --socket=fallback-x11
+  - --socket=wayland
   - --socket=pulseaudio
   - --share=network
   - --device=all
+  - --filesystem=host:ro
 cleanup:
   - /include
   - /share/doc

@@ -68,8 +68,8 @@ modules:
       - &m64p
         type: git
         url: https://github.com/loganmc10/m64p.git
-        tag: v2021.7.27
-        commit: 090b153886d978010527b72e2362739b4d8540c0
+        tag: v2021.8.9
+        commit: 4229fadca515beb37768c61e54d52e5a1bbb7171
         x-checker-data:
           type: git
           tag-pattern: ^(v[\d.]+)$

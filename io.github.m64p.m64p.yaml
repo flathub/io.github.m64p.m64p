@@ -154,8 +154,8 @@ modules:
       - install vosk-*/vosk/libvosk.so -t /app/bin
     sources:
       - type: file
-        url: https://github.com/alphacep/vosk-api/releases/download/v0.3.30/vosk-0.3.30-py3-none-linux_x86_64.whl
-        sha256: 650a98bde70fed12ec80c94be8436e17b0e45c4dac8fe37c571ba4e1c6641505
+        url: https://github.com/alphacep/vosk-api/releases/download/v0.3.31/vosk-0.3.31-py3-none-linux_x86_64.whl
+        sha256: 6791f3348f8e6f2a0bff88e86b6ea66640b79fa012b9d62ded688a22e49379c0
         x-checker-data:
           type: json
           url: https://api.github.com/repos/alphacep/vosk-api/releases/latest
@@ -163,8 +163,8 @@ modules:
           url-query: .assets[] | select(.name=="vosk-" + $version + "-py3-none-linux_x86_64.whl")
             | .browser_download_url
       - type: file
-        url: https://github.com/alphacep/vosk-api/releases/download/v0.3.30/vosk-0.3.30-py3-none-linux_aarch64.whl
-        sha256: 02298d49e1fd11cd835548cd92c7dd9bbf8b082dee19d2514f73ea33d3130126
+        url: https://github.com/alphacep/vosk-api/releases/download/v0.3.31/vosk-0.3.31-py3-none-linux_aarch64.whl
+        sha256: 7a46022eb35d60a5d11c8394613568bf97b53ffdec702db9a086a706f3fd8811
         x-checker-data:
           type: json
           url: https://api.github.com/repos/alphacep/vosk-api/releases/latest

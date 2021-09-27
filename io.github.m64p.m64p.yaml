@@ -1,6 +1,6 @@
 app-id: io.github.m64p.m64p
 runtime: org.kde.Platform
-runtime-version: '5.15'
+runtime-version: '5.15-21.08'
 sdk: org.kde.Sdk
 command: mupen64plus-gui
 rename-icon: mupen64plus

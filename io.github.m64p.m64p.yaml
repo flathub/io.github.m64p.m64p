@@ -24,14 +24,11 @@ modules:
   - shared-modules/libusb/libusb.json
 
   - name: hidapi
+    buildsystem: cmake
     sources:
       - type: git
         url: https://github.com/libusb/hidapi.git
-        tag: hidapi-0.10.1
-        commit: f6d0073fcddbdda24549199445e844971d3c9cef
-        x-checker-data:
-          type: git
-          tag-pattern: ^(hidapi-[\d.]+)$
+        commit: 695b01f9daf359bb7c54fe575f64a8e4a8c4655f
     cleanup:
       - /include
       - /lib/pkgconfig

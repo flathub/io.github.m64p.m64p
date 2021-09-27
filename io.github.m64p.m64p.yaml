@@ -1,6 +1,6 @@
 app-id: io.github.m64p.m64p
 runtime: org.kde.Platform
-runtime-version: '5.15'
+runtime-version: '5.15-21.08'
 sdk: org.kde.Sdk
 command: mupen64plus-gui
 rename-icon: mupen64plus
@@ -24,14 +24,11 @@ modules:
   - shared-modules/libusb/libusb.json
 
   - name: hidapi
+    buildsystem: cmake
     sources:
       - type: git
         url: https://github.com/libusb/hidapi.git
-        tag: hidapi-0.10.1
-        commit: f6d0073fcddbdda24549199445e844971d3c9cef
-        x-checker-data:
-          type: git
-          tag-pattern: ^(hidapi-[\d.]+)$
+        commit: 695b01f9daf359bb7c54fe575f64a8e4a8c4655f
     cleanup:
       - /include
       - /lib/pkgconfig
@@ -68,8 +65,8 @@ modules:
       - &m64p
         type: git
         url: https://github.com/loganmc10/m64p.git
-        tag: v2021.9.10
-        commit: 778e4ecdd9df6909f3d4ed13f4c9618c8a18a67a
+        tag: v2021.9.26
+        commit: 467160c6b4109fd1fa9bd574002817329f8665d9
         x-checker-data:
           type: git
           tag-pattern: ^(v[\d.]+)$

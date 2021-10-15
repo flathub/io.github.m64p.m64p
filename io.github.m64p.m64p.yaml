@@ -1,6 +1,6 @@
 app-id: io.github.m64p.m64p
 runtime: org.kde.Platform
-runtime-version: '5.15-21.08'
+runtime-version: 5.15-21.08
 sdk: org.kde.Sdk
 command: mupen64plus-gui
 rename-icon: mupen64plus
@@ -65,8 +65,8 @@ modules:
       - &m64p
         type: git
         url: https://github.com/loganmc10/m64p.git
-        tag: v2021.9.26
-        commit: 467160c6b4109fd1fa9bd574002817329f8665d9
+        tag: v2021.10.11
+        commit: 03e01abc39e2ada4c3f6546a2027c05b37725e4f
         x-checker-data:
           type: git
           tag-pattern: ^(v[\d.]+)$

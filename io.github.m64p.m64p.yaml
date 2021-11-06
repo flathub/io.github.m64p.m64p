@@ -65,8 +65,8 @@ modules:
       - &m64p
         type: git
         url: https://github.com/loganmc10/m64p.git
-        tag: v2021.10.28
-        commit: 661626cc762519bd883bf66956ab8472a757ade3
+        tag: v2021.11.4
+        commit: 5abda8830445e5cc94253b30ae70b800bc0dcc9c
         x-checker-data:
           type: git
           tag-pattern: ^(v[\d.]+)$
@@ -151,8 +151,8 @@ modules:
       - install vosk-*/vosk/libvosk.so -t /app/bin
     sources:
       - type: file
-        url: https://github.com/alphacep/vosk-api/releases/download/v0.3.31/vosk-0.3.31-py3-none-linux_x86_64.whl
-        sha256: 6791f3348f8e6f2a0bff88e86b6ea66640b79fa012b9d62ded688a22e49379c0
+        url: https://github.com/alphacep/vosk-api/releases/download/v0.3.32/vosk-0.3.32-py3-none-linux_x86_64.whl
+        sha256: 56b832c061dcc76ba3a49811328d326cbc09ae4577f6f5530b552415b8e79084
         x-checker-data:
           type: json
           url: https://api.github.com/repos/alphacep/vosk-api/releases/latest
@@ -160,8 +160,8 @@ modules:
           url-query: .assets[] | select(.name=="vosk-" + $version + "-py3-none-linux_x86_64.whl")
             | .browser_download_url
       - type: file
-        url: https://github.com/alphacep/vosk-api/releases/download/v0.3.31/vosk-0.3.31-py3-none-linux_aarch64.whl
-        sha256: 7a46022eb35d60a5d11c8394613568bf97b53ffdec702db9a086a706f3fd8811
+        url: https://github.com/alphacep/vosk-api/releases/download/v0.3.32/vosk-0.3.32-py3-none-linux_aarch64.whl
+        sha256: 4d7439c59848ebaaa0fef0a6ca5c60493db68ac00c79284eb9bc436e71e82c58
         x-checker-data:
           type: json
           url: https://api.github.com/repos/alphacep/vosk-api/releases/latest

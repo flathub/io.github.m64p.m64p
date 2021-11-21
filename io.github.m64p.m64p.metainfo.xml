@@ -18,6 +18,7 @@
       <screenshot type="default">https://raw.githubusercontent.com/flathub/io.github.m64p.m64p/master/m64p.png</screenshot>
   </screenshots>
   <releases>
+    <release version="v2021.11.21.2" date="2021-11-21"/>
     <release version="v2021.11.4" date="2021-11-06"/>
     <release version="v2021.10.28" date="2021-10-29"/>
     <release version="v2021.10.11" date="2021-10-15"/>

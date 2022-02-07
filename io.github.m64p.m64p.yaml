@@ -65,8 +65,8 @@ modules:
       - &m64p
         type: git
         url: https://github.com/m64p/m64p.git
-        tag: v2022.2.3
-        commit: 8fd720fb12878ccb0c03be7cc5c487fe35a58dae
+        tag: v2022.2.7
+        commit: 9df1e6ab1ea1240d4c15c3787506124021940979
         x-checker-data:
           type: git
           tag-pattern: ^(v[\d.]+)$

@@ -8,11 +8,11 @@
   <content_rating type="oars-1.0"/>
   <launchable type="desktop-id">io.github.m64p.m64p.desktop</launchable>
   <url type="homepage">https://m64p.github.io</url>
+  <url type="bugtracker">https://github.com/loganmc10/m64p/issues</url>
   <url type="donation">https://www.patreon.com/m64p</url>
   <description>
       <p>m64p uses mupen64plus-gui, a brand new mupen64plus frontend written in Qt5. It supports all of the things you’d expect from a frontend (savestate management, pausing, screenshots, etc.).</p>
       <p>m64p comes bundled with paraLLEl-RDP for graphics. It should give you the best out-of-the-box experience available for N64 gaming.</p>
-      <p>NOTE: This flatpak is not verified by, affiliated with, or supported by the developer. Please do not submit issues to the developer when using this flatpak.</p>
   </description>
   <screenshots>
       <screenshot type="default">https://raw.githubusercontent.com/flathub/io.github.m64p.m64p/master/m64p.png</screenshot>

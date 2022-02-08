@@ -45,6 +45,7 @@ modules:
           is-main-source: true
           type: json
           url: https://api.github.com/repos/m64p/m64p/releases/latest
+          version-query: .tag_name
           url-query: .assets[] | select(.name|contains("linux"))
             | .browser_download_url
 

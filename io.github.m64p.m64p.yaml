@@ -5,8 +5,7 @@ sdk: org.kde.Sdk
 command: gui-wrapper.sh
 rename-icon: mupen64plus
 finish-args:
-  - --share=ipc
-  - --socket=x11
+  - --socket=wayland
   - --socket=pulseaudio
   - --share=network
   - --device=all

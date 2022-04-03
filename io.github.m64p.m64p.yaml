@@ -39,8 +39,8 @@ modules:
       - install -D * /app/mupen64plus
     sources:
       - type: archive
-        url: https://github.com/m64p/m64p/releases/download/v2022.03.31/m64p-linux64-33c43f5.zip
-        sha256: 2eaa1ad80c29ddc262cfddb2a8497c88fefc879711b5341bedd810195d65f9ed
+        url: https://github.com/m64p/m64p/releases/download/v2022.04.03/m64p-linux64-67dfe5c.zip
+        sha256: 94f9f0c5912bfd502cf6bfd821d30f3f98994df9d3b3ad6b511a69da214b8eb7
         x-checker-data:
           is-main-source: true
           type: json

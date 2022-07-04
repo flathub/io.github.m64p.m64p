@@ -40,7 +40,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/m64p/m64p.git
-        tag: v2022.06.4
+        tag: v2022.07.1
         x-checker-data:
           is-main-source: true
           type: git

@@ -46,12 +46,13 @@ modules:
       - type: git
         url: https://github.com/m64p/m64p.git
         tag: v2022.07.1
+        commit: 03c83c87a40cff2e63e6f9e6256214d38166eb03
         x-checker-data:
           is-main-source: true
           type: git
           tag-pattern: ^(v[\d.]+)$
 
-        commit: 03c83c87a40cff2e63e6f9e6256214d38166eb03
+
   - name: finalize
     buildsystem: simple
     build-commands:

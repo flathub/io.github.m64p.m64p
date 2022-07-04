@@ -34,6 +34,11 @@ modules:
 
   - name: m64p
     buildsystem: simple
+    build-options:
+      cflags-override: true
+      cppflags-overrid: true
+      cxxflags-override: true
+      ldflags-override: true
     build-commands:
       - ./build.sh nozip
       - mv mupen64plus /app

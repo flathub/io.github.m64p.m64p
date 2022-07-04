@@ -1,6 +1,6 @@
 app-id: io.github.m64p.m64p
 runtime: org.kde.Platform
-runtime-version: 5.15-21.08
+runtime-version: "6.2"
 sdk: org.kde.Sdk
 command: gui-wrapper.sh
 rename-icon: mupen64plus
@@ -35,18 +35,16 @@ modules:
   - name: m64p
     buildsystem: simple
     build-commands:
-      - mkdir -p /app/mupen64plus
-      - install -D * /app/mupen64plus
+      - ./build.sh nozip
+      - mv mupen64plus /app
     sources:
-      - type: archive
-        url: https://github.com/m64p/m64p/releases/download/v2022.06.4/m64p-linux64-34537a7.zip
-        sha256: 6cf284970dd9a00cebf6fde287a46124c46036c2a3d69502b1920cd8271cb6ea
+      - type: git
+        url: https://github.com/m64p/m64p.git
+        tag: v2022.06.4
         x-checker-data:
           is-main-source: true
-          type: json
-          url: https://api.github.com/repos/m64p/m64p/releases/latest
-          version-query: .tag_name
-          url-query: .assets[] | select(.name|contains("linux")) | .browser_download_url
+          type: git
+          tag-pattern: "^(v[\\d.]+)$"
 
   - name: finalize
     buildsystem: simple

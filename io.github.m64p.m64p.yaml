@@ -46,8 +46,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/m64p/m64p.git
-        tag: v2022.07.8
-        commit: b54f435395dd37c52e5a7f5151d8a2e093921aab
+        tag: v2022.07.10
+        commit: 4374d1f16bcbf3cfc328fadc6c51d6112487f6c2
         x-checker-data:
           is-main-source: true
           type: git

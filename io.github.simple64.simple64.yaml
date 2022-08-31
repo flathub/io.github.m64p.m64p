@@ -1,9 +1,9 @@
-app-id: io.github.m64p.m64p
+app-id: io.github.simple64.simple64
 runtime: org.kde.Platform
-runtime-version: '6.3'
+runtime-version: "6.3"
 sdk: org.kde.Sdk
 command: gui-wrapper.sh
-rename-icon: mupen64plus
+rename-icon: simple64
 finish-args:
   - --socket=wayland
   - --socket=fallback-x11
@@ -33,7 +33,7 @@ modules:
         url: https://github.com/libusb/hidapi.git
         tag: hidapi-0.12.0
 
-  - name: m64p
+  - name: simple64
     buildsystem: simple
     build-options:
       cflags-override: true
@@ -42,10 +42,10 @@ modules:
       ldflags-override: true
     build-commands:
       - ./build.sh nozip
-      - mv mupen64plus /app
+      - mv simple64 /app
     sources:
       - type: git
-        url: https://github.com/m64p/m64p.git
+        url: https://github.com/simple64/simple64.git
         tag: v2022.08.9
         commit: fbf2c912a7f2f8bdfd26a686bd679418a0ed3270
         x-checker-data:
@@ -53,21 +53,20 @@ modules:
           type: git
           tag-pattern: ^(v[\d.]+)$
 
-
   - name: finalize
     buildsystem: simple
     build-commands:
-      - install -D mupen64plus.svg -t /app/share/icons/hicolor/scalable/apps
-      - install -D io.github.m64p.m64p.desktop -t /app/share/applications
-      - install -D io.github.m64p.m64p.metainfo.xml -t /app/share/metainfo
+      - install -D simple64.svg -t /app/share/icons/hicolor/scalable/apps
+      - install -D io.github.simple64.simple64.desktop -t /app/share/applications
+      - install -D io.github.simple64.simple64.metainfo.xml -t /app/share/metainfo
       - install -D gui-wrapper.sh -t /app/bin
     sources:
       - type: file
-        url: https://raw.githubusercontent.com/m64p/mupen64plus-gui/main/mupen64plus.svg
+        url: https://raw.githubusercontent.com/simple64/simple64-gui/main/simple64.svg
         sha256: ab48d530d945dab710df100b8cd21c105e7917b013f9daea213f086fb1edb9ce
       - type: file
-        path: io.github.m64p.m64p.desktop
+        path: io.github.simple64.simple64.desktop
       - type: file
-        path: io.github.m64p.m64p.metainfo.xml
+        path: io.github.simple64.simple64.metainfo.xml
       - type: file
         path: gui-wrapper.sh

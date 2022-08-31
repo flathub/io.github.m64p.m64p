@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
-  <id>io.github.simple64.simple64</id>
-  <name>simple64</name>
+  <id>io.github.m64p.m64p</id>
+  <name>m64p</name>
   <summary>Nintendo 64 Emulator</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0</project_license>
   <content_rating type="oars-1.0"/>
-  <launchable type="desktop-id">io.github.simple64.simple64.desktop</launchable>
-  <url type="homepage">https://simple64.github.io</url>
-  <url type="bugtracker">https://github.com/simple64/simple64/issues</url>
+  <launchable type="desktop-id">io.github.m64p.m64p.desktop</launchable>
+  <url type="homepage">https://m64p.github.io</url>
+  <url type="bugtracker">https://github.com/m64p/m64p/issues</url>
   <url type="donation">https://www.patreon.com/loganmc10</url>
   <description>
-      <p>simple64 uses simple64-gui, a brand new N64 frontend written in Qt6. It supports all of the things you’d expect from a frontend (savestate management, pausing, screenshots, etc.).</p>
-      <p>simple64 comes bundled with paraLLEl-RDP for graphics. It should give you the best out-of-the-box experience available for N64 gaming.</p>
+      <p>m64p uses mupen64plus-gui, a brand new mupen64plus frontend written in Qt5. It supports all of the things you’d expect from a frontend (savestate management, pausing, screenshots, etc.).</p>
+      <p>m64p comes bundled with paraLLEl-RDP for graphics. It should give you the best out-of-the-box experience available for N64 gaming.</p>
   </description>
   <screenshots>
-      <screenshot type="default">https://raw.githubusercontent.com/flathub/io.github.simple64.simple64/master/simple64.png</screenshot>
+      <screenshot type="default">https://raw.githubusercontent.com/flathub/io.github.m64p.m64p/master/m64p.png</screenshot>
   </screenshots>
   <releases>
     <release version="v2022.08.9" date="2022-08-21"/>

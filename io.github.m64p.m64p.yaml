@@ -27,7 +27,7 @@ modules:
         strip-components: 0
 
   - name: hidapi
-    buildsystem: cmake
+    buildsystem: cmake-ninja
     sources:
       - type: git
         url: https://github.com/libusb/hidapi.git
@@ -63,7 +63,7 @@ modules:
       - install -D gui-wrapper.sh -t /app/bin
     sources:
       - type: file
-        url: https://raw.githubusercontent.com/m64p/mupen64plus-gui/main/mupen64plus.svg
+        url: https://raw.githubusercontent.com/simple64/simple64-gui/8093600a69c5f0a73d5c6bfe470a940fab30013f/mupen64plus.svg
         sha256: ab48d530d945dab710df100b8cd21c105e7917b013f9daea213f086fb1edb9ce
       - type: file
         path: io.github.m64p.m64p.desktop

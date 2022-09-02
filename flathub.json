@@ -1,5 +1,4 @@
 {
-  "only-arches": ["x86_64"],
-  "automerge-flathubbot-prs": true,
-  "publish-delay-hours": 1
+  "end-of-life": "The application has been renamed to io.github.simple64.simple64",
+  "end-of-life-rebase": "io.github.simple64.simple64"
 }
